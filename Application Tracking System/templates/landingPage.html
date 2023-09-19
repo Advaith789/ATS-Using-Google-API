@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .login-button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<head>
+  <title>Login Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#admin').click(function() {
+        window.location.href = "/admin";
+      });
+
+      $('#user').click(function() {
+        window.location.href = "/user";
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2 align = "center">Login</h2>
+    <div class="login-buttons">
+      <button id="admin" class="login-button">Admin</button>
+      <button id="user" class="login-button">User</button>
+    </div>
+  </div>
+</body>
+
+</html>
